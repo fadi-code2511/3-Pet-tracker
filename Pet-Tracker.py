@@ -21,11 +21,18 @@ class Pet:
             print(f"{self.name} is a {self.species}, and it has {self.age} years old and it has been adopted")
         else:
             print(f"{self.name} is a {self.species}, and it has {self.age} years old and it hasn't been adopted yet")
+    
+    # sets adopted to True
+    def mark_adopted(self):
+        self.adopted=True
+
 
 
 # for testing purpose
-# pet1 = Pet("sally", "cat", 3)
-# pet1.display_info()
+pet1 = Pet("sally", "cat", 3)
+pet1.display_info()
+pet1.mark_adopted()
+pet1.display_info()
 
 # pet2 = Pet("Max", "dog", 5, adopted=True)
 # pet2.display_info()
