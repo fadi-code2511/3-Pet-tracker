@@ -25,6 +25,10 @@ class Pet:
     # sets adopted to True
     def mark_adopted(self):
         self.adopted=True
+    
+    # increases the pet's age by 1 year.
+    def birthday(self):
+        self.age+=1
 
 
 
@@ -32,7 +36,11 @@ class Pet:
 pet1 = Pet("sally", "cat", 3)
 pet1.display_info()
 pet1.mark_adopted()
+pet1.birthday()
 pet1.display_info()
+
+
+# pet1.display_info()
 
 # pet2 = Pet("Max", "dog", 5, adopted=True)
 # pet2.display_info()
