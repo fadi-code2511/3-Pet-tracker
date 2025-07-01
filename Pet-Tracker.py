@@ -45,3 +45,9 @@ pet1.display_info()
 # pet2 = Pet("Max", "dog", 5, adopted=True)
 # pet2.display_info()
 
+pet3=Pet("toto","monkey",4)
+pet3.display_info()
+pet3.mark_adopted()
+pet3.birthday()
+pet3.display_info()
+
