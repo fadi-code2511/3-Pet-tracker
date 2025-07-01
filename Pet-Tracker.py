@@ -34,9 +34,23 @@ class Pet:
 # Create a list of pets manually.
 # Write a function that finds all non-adopted pets.
 # Add a method rename(new_name) that changes the name of the pet.
+
+# Create a list of pets manually.
 pets=[Pet("Jeje","cat",5),Pet("Wees","duck",1),Pet("Wezo","rabbit",4)]
 
-
+# Write a function that finds all non-adopted pets.
+def NonAdoptedPets():
+    petList=[]
+    for pet in pets:
+        if pet.adopted==False:
+            petList.append(pet.name)
+    return petList
+def PrintingNonAdopted():
+    print("the name of pets that NonAdopted: ",end="")
+    for n in NonAdoptedPets():
+        print (n,end=", ")
+    return 
+PrintingNonAdopted()
 # for testing purpose
 # pet1 = Pet("Sally", "cat", 3)
 # pet1.display_info()
