@@ -14,3 +14,19 @@ class Pet:
         self.species=species
         self.age=age
         self.adopted=adopted
+    
+    # prints all pet data in a readable sentence.
+    def display_info(self):
+        if self.adopted==True:
+            print(f"{self.name} is a {self.species}, and it has {self.age} years old and it has been adopted")
+        else:
+            print(f"{self.name} is a {self.species}, and it has {self.age} years old and it hasn't been adopted yet")
+
+
+# for testing purpose
+# pet1 = Pet("sally", "cat", 3)
+# pet1.display_info()
+
+# pet2 = Pet("Max", "dog", 5, adopted=True)
+# pet2.display_info()
+
