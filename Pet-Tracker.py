@@ -30,6 +30,12 @@ class Pet:
     def birthday(self):
         self.age+=1
 
+    #method rename(new_name) that changes the name of the pet
+    def new_name(self):
+        NewName=str(input("Enter the new name: "))
+        self.name=NewName
+        return self.name
+
 # Part 2:
 # Create a list of pets manually.
 # Write a function that finds all non-adopted pets.
@@ -50,12 +56,15 @@ def PrintingNonAdopted():
     for n in NonAdoptedPets():
         print (n,end=", ")
     return 
-PrintingNonAdopted()
+# PrintingNonAdopted()   #printing all NonAdopted pets
+
 # for testing purpose
 # pet1 = Pet("Sally", "cat", 3)
-# pet1.display_info()
+# pet1.display_info()   
 # pet1.mark_adopted()
 # pet1.birthday()
+# pet1.display_info()
+# print(pet1.new_name())
 # pet1.display_info()
 
 # pet2 = Pet("Max", "dog", 5, adopted=True)
